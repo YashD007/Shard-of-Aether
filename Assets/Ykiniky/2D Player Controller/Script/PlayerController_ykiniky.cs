@@ -31,6 +31,8 @@ namespace YkinikY
         }
         void MovimentUpdate()
         {
+            float moveInput=Input.GetAxis("Horizontal");
+
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
                 transform.position += 5 * Time.deltaTime * velocity * Vector3.left;
@@ -61,6 +63,11 @@ namespace YkinikY
             {
                 GetComponent<SpriteRenderer>().flipX = true;
             }
+            if (moveInput > 0.01f)
+            transform.localScale = new Vector3(3.5f, 3.5f, 3.5f);
+        else if (moveInput < -0.01f)
+            transform.localScale = new Vector3(-3.5f, 3.5f, 3.5f);
+ 
 
         }
         private void OnCollisionEnter2D(Collision2D collision)
