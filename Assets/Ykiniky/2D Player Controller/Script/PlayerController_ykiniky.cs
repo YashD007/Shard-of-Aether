@@ -11,8 +11,7 @@ namespace YkinikY
         public bool canMove = true;
         public bool canJump = true;
         public float velocity = 1;
-        [Header("Camera")]
-        public PlayerCameraFollow_ykiniky playerCameraFollow;
+        
         public Vector2 lastCheckpoint;
         // Start is called before the first frame update
         void Start()
@@ -23,26 +22,8 @@ namespace YkinikY
         // Update is called once per frame
         void Update()
         {
-            if (canMove) MovimentUpdate();
-            if (playerCameraFollow != null)
-            {
-                if (transform.position.x > 0)
-                {
-                    playerCameraFollow.FollowX();
-                }
-                else
-                {
-                    playerCameraFollow.DontFollowX();
-                }
-                if (transform.position.y > 0)
-                {
-                    playerCameraFollow.FollowY();
-                }
-                else
-                {
-                    playerCameraFollow.DontFollowY();
-                }
-            }
+            MovimentUpdate();
+            
         }
         public void GameOver()
         {
