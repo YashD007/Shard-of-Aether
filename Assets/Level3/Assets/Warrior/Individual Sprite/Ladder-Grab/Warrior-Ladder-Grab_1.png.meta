@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Warrior-Ladder-Grab_1_0: 5953072692426871326
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Warrior_Attack_6_0: 5916919892796381803
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

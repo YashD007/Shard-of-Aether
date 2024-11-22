@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Warrior-Slide_3_0: -6371425280996362638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

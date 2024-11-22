@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Warrior_WallSlide_3_0: 7820085696420470854
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Warrior_Edge-Idle_5_0: 6704797962957532368
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

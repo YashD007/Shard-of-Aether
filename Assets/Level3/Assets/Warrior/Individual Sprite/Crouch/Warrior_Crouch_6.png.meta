@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Warrior_Crouch_6_0: 9083228458542037964
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

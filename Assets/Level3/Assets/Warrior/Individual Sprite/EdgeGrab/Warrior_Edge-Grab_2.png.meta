@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Warrior_Edge-Grab_2_0: -199368899156223088
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

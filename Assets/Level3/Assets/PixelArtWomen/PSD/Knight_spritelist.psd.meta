@@ -1459,7 +1459,61 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Knight_spritelist_0: -1445012091963092019
+      Knight_spritelist_1: -7127739539491916314
+      Knight_spritelist_10: -971079762434893667
+      Knight_spritelist_11: 8085683560622332205
+      Knight_spritelist_12: 7301633164538471617
+      Knight_spritelist_13: 359528840702743184
+      Knight_spritelist_14: 5246554681902358632
+      Knight_spritelist_15: -8936462674702668846
+      Knight_spritelist_16: -6235483464163131346
+      Knight_spritelist_17: 1676451802751092715
+      Knight_spritelist_18: -2004372335395837695
+      Knight_spritelist_19: -3879878668132167895
+      Knight_spritelist_2: -5994627801483940846
+      Knight_spritelist_20: -5384654779532551885
+      Knight_spritelist_21: -7906992830869996581
+      Knight_spritelist_22: 2134886328443515976
+      Knight_spritelist_23: 6038558295574909526
+      Knight_spritelist_24: -8425438049064573031
+      Knight_spritelist_25: -8509375036253788124
+      Knight_spritelist_26: 1410294296406235919
+      Knight_spritelist_27: -8129550162112915233
+      Knight_spritelist_28: 6435065225825176920
+      Knight_spritelist_29: 6436391914621406668
+      Knight_spritelist_3: 52373220803659826
+      Knight_spritelist_30: -1422711915246299278
+      Knight_spritelist_31: -2458809796842695070
+      Knight_spritelist_32: 3208584352890873472
+      Knight_spritelist_33: 1975686357514417473
+      Knight_spritelist_34: 5010713426826817423
+      Knight_spritelist_35: 6577427624983843519
+      Knight_spritelist_36: -2415871865534628637
+      Knight_spritelist_37: -2961708008339558266
+      Knight_spritelist_38: -3985934587367302707
+      Knight_spritelist_39: -8674493661158710502
+      Knight_spritelist_4: -6037834640538303177
+      Knight_spritelist_40: -638380309492759782
+      Knight_spritelist_41: 9156736672259337541
+      Knight_spritelist_42: 6364147962161652389
+      Knight_spritelist_43: -765502752914972182
+      Knight_spritelist_44: -283888172126371468
+      Knight_spritelist_45: 5390497390869111465
+      Knight_spritelist_46: -981137359637507129
+      Knight_spritelist_47: -8894062114525748161
+      Knight_spritelist_48: -2445900333210606432
+      Knight_spritelist_49: -3524045943366754342
+      Knight_spritelist_5: 8696227796513741607
+      Knight_spritelist_50: 4718226101383569652
+      Knight_spritelist_51: -4625984117970273933
+      Knight_spritelist_52: -3751719452477297358
+      Knight_spritelist_53: -3042445092973130700
+      Knight_spritelist_6: 2840780521499718877
+      Knight_spritelist_7: 3594116869829119606
+      Knight_spritelist_8: -8429973313150888999
+      Knight_spritelist_9: 6417744897920545321
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

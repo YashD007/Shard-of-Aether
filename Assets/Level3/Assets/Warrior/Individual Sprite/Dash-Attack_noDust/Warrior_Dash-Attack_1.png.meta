@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Warrior_Dash-Attack_1_0: 4819158432889334768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
