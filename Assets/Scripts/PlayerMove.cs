@@ -26,7 +26,7 @@ public class enemy_move : MonoBehaviour {
 
 			transform.Translate(2* Time.deltaTime * speed, 0,0);
 
-			transform.localScale= new Vector2 (1,1);
+			transform.localScale= new Vector2 (3.47f,3.15f);
 
  		}
 
@@ -34,7 +34,7 @@ public class enemy_move : MonoBehaviour {
 
 			transform.Translate(-2* Time.deltaTime * speed, 0,0);
 
-			transform.localScale= new Vector2 (-1,1);
+			transform.localScale= new Vector2 (-3.47f,3.15f);
 
 		}
 
