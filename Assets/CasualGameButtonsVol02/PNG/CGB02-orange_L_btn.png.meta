@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CGB02-orange_L_btn_0: 538741940707533245
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

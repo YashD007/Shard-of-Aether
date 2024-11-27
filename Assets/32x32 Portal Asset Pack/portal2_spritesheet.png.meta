@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      portal2_spritesheet_0: 5523053006323921777
+      portal2_spritesheet_1: -6088627051259308308
+      portal2_spritesheet_10: 3659119242300153902
+      portal2_spritesheet_11: 7488664126269219034
+      portal2_spritesheet_12: -7482314345225353568
+      portal2_spritesheet_13: -1730767501878885506
+      portal2_spritesheet_2: 3444409514517652317
+      portal2_spritesheet_3: -2500883200522033666
+      portal2_spritesheet_4: -7313344498807343788
+      portal2_spritesheet_5: 6583238773677891514
+      portal2_spritesheet_6: 4237473123163745551
+      portal2_spritesheet_7: 721293308648882167
+      portal2_spritesheet_8: -9094682886620274659
+      portal2_spritesheet_9: -8167223343899541200
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
