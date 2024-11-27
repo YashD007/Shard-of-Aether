@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CGB02-blue_L_btn_0: -1573344661467012158
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

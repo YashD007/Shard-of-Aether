@@ -822,7 +822,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      portal5_spritesheet_0: 6500949842839943123
+      portal5_spritesheet_1: -7336884676122465761
+      portal5_spritesheet_10: -3882257537561568808
+      portal5_spritesheet_11: -1765324160932093060
+      portal5_spritesheet_12: 4758450558711250218
+      portal5_spritesheet_13: 749775895664135254
+      portal5_spritesheet_14: -506522194342762356
+      portal5_spritesheet_15: -1874179872397124881
+      portal5_spritesheet_16: -7479851337319088955
+      portal5_spritesheet_17: 2827760325521607397
+      portal5_spritesheet_18: 1368146616225132473
+      portal5_spritesheet_19: 2078912023355587259
+      portal5_spritesheet_2: -5374103914609158282
+      portal5_spritesheet_20: -1702454992518683962
+      portal5_spritesheet_21: -5538436770058429777
+      portal5_spritesheet_22: 5380881770566327805
+      portal5_spritesheet_23: -8854674495130755975
+      portal5_spritesheet_24: 447278208845044896
+      portal5_spritesheet_25: 156463026833585672
+      portal5_spritesheet_26: -5786958532734598681
+      portal5_spritesheet_27: 272992298045779098
+      portal5_spritesheet_3: 268355293331692864
+      portal5_spritesheet_4: 877097164169903942
+      portal5_spritesheet_5: -667875960610828052
+      portal5_spritesheet_6: 8056962234207895130
+      portal5_spritesheet_7: -5676647280667969798
+      portal5_spritesheet_8: -6124023390422881858
+      portal5_spritesheet_9: 2709294030956634326
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
