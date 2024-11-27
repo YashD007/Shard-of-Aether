@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour
+public class TriangleMove : MonoBehaviour
 {
     public Transform pointA; // Starting point
     public Transform pointB; // Ending point
@@ -26,5 +26,5 @@ public class MovingPlatform : MonoBehaviour
         }
     }
 
-  
+   
 }
