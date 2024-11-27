@@ -9,6 +9,7 @@ TagManager:
   - turn
   - Enemy
   - IsGrounded
+  - EnemyHead
   layers:
   - Default
   - TransparentFX
