@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - turn
   - Enemy
+  - IsGrounded
   layers:
   - Default
   - TransparentFX
