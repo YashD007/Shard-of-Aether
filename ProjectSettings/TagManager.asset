@@ -10,11 +10,12 @@ TagManager:
   - Enemy
   - IsGrounded
   - EnemyHead
+  - Ground
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - groundLayer
   - Water
   - UI
   - 
