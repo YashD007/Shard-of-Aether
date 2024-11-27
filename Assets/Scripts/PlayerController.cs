@@ -12,12 +12,12 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
-    public float doubleJumpForce = 8f;
+    // public float doubleJumpForce = 8f;
     public LayerMask groundLayer;
     public Transform groundCheck;
 
     private Rigidbody2D rb;
-    private bool isGroundedBool = false;
+    // private bool isGroundedBool = false;
     private bool canDoubleJump = false;
 
     public Animator playeranim;
@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
     public float fireRate = 0.5f; // Time between each shot
     private float nextFireTime = 0f; // Time of the next allowed shot
 
+    private bool isGrounded ;
 
     
 
@@ -49,6 +50,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         footEmissions = footsteps.emission;
 
@@ -60,33 +62,49 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    void jump()
+    {
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        isGrounded = false;
+
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "killzone")
+        {
+            GameManager.instance.Death();
+        }
+        if (collision.gameObject.tag == "Ground")
+            isGrounded = true;
+    }
+
     private void Update()
     {
-        isGroundedBool = IsGrounded();
+        // isGroundedBool = IsGrounded();
 
-        if (isGroundedBool)
-        {
-            canDoubleJump = true; // Reset double jump when grounded
+        // if (isGroundedBool)
+        // {
+        //     canDoubleJump = true; // Reset double jump when grounded
 
-            if (controlmode == Controls.pc)
-            {
-                moveX = Input.GetAxis("Horizontal");
-            }
+        //     if (controlmode == Controls.pc)
+        //     {
+        //         moveX = Input.GetAxis("Horizontal");
+        //     }
 
 
             if (Input.GetButtonDown("Jump"))
             {
                 Jump(jumpForce);
             }
-        }
-        else
-        {
-            if (canDoubleJump && Input.GetButtonDown("Jump"))
-            {
-                Jump(doubleJumpForce);
-                canDoubleJump = false; // Disable double jump until grounded again
-            }
-        }
+        // }
+        // else
+        // {
+        //     if (canDoubleJump && Input.GetButtonDown("Jump"))
+        //     {
+        //         Jump(doubleJumpForce);
+        //         canDoubleJump = false; // Disable double jump until grounded again
+        //     }
+        // }
 
         if (!isPaused)
         {
@@ -113,32 +131,32 @@ public class PlayerController : MonoBehaviour
 
         //impactEffect
 
-        if(!wasonGround && isGroundedBool)
-        {
-            ImpactEffect.gameObject.SetActive(true);
-            ImpactEffect.Stop();
-            ImpactEffect.transform.position = new Vector2(footsteps.transform.position.x,footsteps.transform.position.y-0.2f);
-            ImpactEffect.Play();
-        }
+        // if(!wasonGround && isGroundedBool)
+        // {
+        //     ImpactEffect.gameObject.SetActive(true);
+        //     ImpactEffect.Stop();
+        //     ImpactEffect.transform.position = new Vector2(footsteps.transform.position.x,footsteps.transform.position.y-0.2f);
+        //     ImpactEffect.Play();
+        // }
 
-        wasonGround = isGroundedBool;
+        // wasonGround = isGroundedBool;
 
         
     }
     public void SetAnimations()
     {
-        if (moveX != 0 && isGroundedBool)
-        {
-            playeranim.SetBool("run", true);
-            footEmissions.rateOverTime= 35f;
-        }
-        else
-        {
-            playeranim.SetBool("run",false);
-            footEmissions.rateOverTime = 0f;
-        }
+        // if (moveX != 0 && isGroundedBool)
+        // {
+        //     playeranim.SetBool("run", true);
+        //     footEmissions.rateOverTime= 35f;
+        // }
+        // else
+        // {
+        //     playeranim.SetBool("run",false);
+        //     footEmissions.rateOverTime = 0f;
+        // }
 
-        playeranim.SetBool("isGrounded", isGroundedBool);
+        // playeranim.SetBool("isGrounded", isGroundedBool);
        
     }
 
@@ -175,20 +193,21 @@ public class PlayerController : MonoBehaviour
         playeranim.SetTrigger("jump");
     }
 
-    private bool IsGrounded()
-    {
-        float rayLength = 0.25f;
-        Vector2 rayOrigin = new Vector2(groundCheck.transform.position.x, groundCheck.transform.position.y - 0.1f);
-        RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.down, rayLength, groundLayer);
-        return hit.collider != null;
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "killzone")
-        {
-            GameManager.instance.Death();
-        }
-    }
+    // private bool IsGrounded()
+    // {
+    //     float rayLength = 0.25f;
+    //     Vector2 rayOrigin = new Vector2(groundCheck.transform.position.x, groundCheck.transform.position.y - 0.1f);
+    //     RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.down, rayLength, groundLayer);
+    //     return hit.collider != null;
+    // }
+
+    // private void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     if(collision.gameObject.tag == "killzone")
+    //     {
+    //         GameManager.instance.Death();
+    //     }
+    // }
     
 
 
@@ -220,20 +239,20 @@ public class PlayerController : MonoBehaviour
     }
     public void MobileJump()
     {
-        if (isGroundedBool)
-        {
-            // Perform initial jump
-            Jump(jumpForce);
-        }
-        else
-        {
-            // Perform double jump if allowed
-            if (canDoubleJump)
-            {
-                Jump(doubleJumpForce);
-                canDoubleJump = false; // Disable double jump until grounded again
-            }
-        }
+        // if (isGroundedBool)
+        // {
+        //     // Perform initial jump
+        //     Jump(jumpForce);
+        // }
+        // else
+        // {
+        //     // Perform double jump if allowed
+        //     if (canDoubleJump)
+        //     {
+        //         Jump(doubleJumpForce);
+        //         canDoubleJump = false; // Disable double jump until grounded again
+        //     }
+        // }
     }
 
     public void Shoot()
